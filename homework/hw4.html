@@ -4,10 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact card</title>
+    <style>
+        header{
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            text-align: center;
+            font-size: larger;
+            background-color: rgb(158, 107, 71);
+        }
+        .content-box{
+            margin-top: 80px;   
+            width: 50%;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid black;
+            padding: 20px;
+            position: relative;
+            overflow: auto;
+        }
+        img{
+            float: left;
+            width: 250px;
+            height: 250px;
+        }
+        .employee-details{
+            text-align: justify;
+        }
+        .contact-info{
+            text-align: justify;
+        }
+
+    </style>
 </head>
 <body>
     <header>Company Contact Card</header>
-    
-
+    <div class="content-box">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf1fiSQO7JfDw0uv1Ae_Ye-Bo9nhGNg27dwg&s" alt="Profile picture">
+    <div class="employee-details">
+    <h3>RAHNA NISAR S</h3>
+    <h4>Front End Developer</h4>
+    <p>An enthusiastic Front End Developer fresher eager to learn and build user-friendly web interfaces.</p>
+    </div>
+    <div class="contact-info">
+        <h4>Contact Info</h4>
+        <p>+91 9876543210</p>
+        <p>abcd456@gmail.com</p>
+    </div>
+    </div>
 </body>
 </html>
