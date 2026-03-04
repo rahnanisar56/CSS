@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line{
+                font-weight: bold;
+        }
+        p::first-letter{
+            color: red;
+            font-size: larger;
+        }
+        div.container>h3{
+            color: green;
+        }
+        a:link{
+            color: blue;
+            text-decoration: none;
+        }
+        a:visited{
+            color: purple;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a.one{
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <p>A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s).For example, : hover can be used to change a button's color when the user's pointer hovers over it.Anchor Pseudo classes The links can be styled using a:link, a:visited, a:hover and a:active pseudo classes.</p>
+    <p>Pseudo-classes let you apply a style to an element not only in relation to the content of the document tree, but also in relation to external factors like the history of the navigator (:visited, for example), the status of its content (like :checked on certain form elements), or the position of the mouse (like :hover, which lets you know if the mouse is over an element or not).</p>
+
+    <div class="container">
+        <section><h3>This is heading no1</h3></section>
+        <h3>This is heading no2</h3>
+    </div>
+    <div class="links">
+    <ul>
+        <li><a class="one" href="https://www.flipkart.com/">Link one</a></li>
+        <li><a href="https://www.mashupstack.com/">Link two</a></li>
+        <li><a href="https://www.google.com/">Link three</a></li>
+    </ul>
+    </div>
+</body>
+</html>
