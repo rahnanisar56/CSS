@@ -4,13 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog post layout</title>
+    <style>
+        body{
+            font-family: math;
+        }
+        div.container{
+            border: 2px solid black;
+            width: 30%;
+            height: 500px;
+            margin: 40px auto;
+            padding: 10px;
+        }
+        p.content::first-line{
+            font-weight: bold;
+        }
+        p.content::first-letter{
+            font-size: larger;
+            color: blue;
+        }
+        blockquote::before {
+            content: "“";
+            font-size: 30px;
+            color: #555;
+        }
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+        h4 {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        h4 + h4 {
+            color: green;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h2>Title: Why Software Is Eating the World</h2>
         <h3>Author: Marc Andreessen</h3>
-        <p>This blog post explains how software is transforming almost every industry, including banking, education, healthcare, and entertainment. The author describes how companies that use technology effectively are replacing traditional businesses. 
+        <p class="content">This blog post explains how software is transforming almost every industry, including banking, education, healthcare, and entertainment. The author describes how companies that use technology effectively are replacing traditional businesses. 
          The article highlights the growing importance of coding, digital platforms, and innovation in the modern economy.</p>
+         <blockquote class="quote">Six decades into the computer revolution, four decades since the invention of the microprocessor, and two decades into the rise of the modern Internet, all of the technology required to transform industries through software finally works.</blockquote>
+        <p>To read more
+            <a href="https://a16z.com/" target="_blank">click here.</a>.
+        </p>
+        <div class="headings">
+            <h4>Technology</h4>
+            <h4>Innovation</h4>
+        </div>
+
     </div>
 </body>
 </html>
