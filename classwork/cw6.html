@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <style>
+        .card{
+            width:250px;
+            border:2px solid gray;
+            padding:20px;
+            text-align:center;
+            margin:auto;   
+        }
+        .product-img{
+            max-width: 100%;
+            margin: auto;
+            border: 2px solid black;
+            border-radius: 10px 0px; 
+        }
+        .card h2{
+            margin: 10px 0;
+            font-size: 25px;
+            font-family: sans-serif;
+        }
+        .button{
+            background-color:green;
+            color:white;
+            padding:10px 15px;
+        }
+        @media only screen and (max-width: 600px) {
+            .card{
+                text-align: center;
+                margin: auto;
+            }
+            h2{
+                font-size: 15px;
+            }       
+        }
+        @media only screen and (orientation: landscape) {
+            .card {
+                background-color: lightblue;
+            }
+        }
+    </style>
+</head>
+<body>
+     <div class="card">
+            <img class="product-img" src="https://m.media-amazon.com/images/I/618vU2qKXQL._SX679_.jpg" alt="iPhone 17 Pro">
+            <h2>iPhone 17 Pro 256 GB: 15.93 cm (6.3″) Display with Promotion up to 120Hz, A19 Pro Chip, Breakthrough Battery Life, Pro Fusion Camera System with Center Stage Front Camera</h2>
+            <p class="button">BUY NOW</p>
+    </div>
+</body>
+</html>
